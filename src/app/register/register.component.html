@@ -1,0 +1,14 @@
+<p style="padding: 15px;">{{res}}</p>
+<mat-form-field appearance="fill">
+  <mat-label>Username</mat-label>
+  <input matInput #username type="text" name="username" placeholder="Username" />
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>E-mail</mat-label>
+  <input matInput #email type="text" name="email" placeholder="E-mail" />
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Password</mat-label>
+  <input matInput #password type="password" name="password" />
+</mat-form-field>
+<button mat-button button name="Submit" color="primary" (click)="register(username.value,email.value,password.value)">Register</button>
